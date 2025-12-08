@@ -1,1 +1,55 @@
+#Loop in pythone
 
+"..While Loop.."
+
+#Let's practice:-
+"print the numbers from 1 to 100"
+
+a = 1
+while a <= 100:
+    print(a)
+    a += 1
+print("code end") # 1 to 100 number print (code end)
+
+"print number from 100 to 1"
+
+i = 100
+while i >= 1:
+    print(i)
+    i -= 1
+print("code end")
+
+"print the multiplication table of a number n"
+
+n = int(input("enter the value:"))
+
+x = 1
+while x <= 10:
+    print(n*x)
+    x += 1
+print("loop end") # enter int valu and multiplication
+
+"print the elements of the follwing list using a loop:-"
+
+list = [1,3,5,8,10,12,14,11,12,15]
+
+rm = 0
+while rm < len(list):
+    print(list[rm])
+    rm += 1
+print("code end") # printed list equepment
+
+"Search for a number x in this tuple using loop:-"
+
+numb = [5,10,20,30,10,40,50,10]
+
+i = 10
+x = 0
+
+while x < len(numb):
+    if(numb[x] == i):
+        print("Founded..",x)
+    else:
+        print("founding...")
+    x += 1
+print("code end")
