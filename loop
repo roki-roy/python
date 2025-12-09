@@ -53,3 +53,42 @@ while x < len(numb):
         print("founding...")
     x += 1
 print("code end")
+
+#Break & Countionue Methode(in loop)
+
+"Break Methode"
+
+list = [1,2,5,87,100,1254,4,100,65,87,100,24]
+
+i = 100
+y = 0
+while y < len(list):
+    if(list[y] == i):
+        print("dicted",y)
+        break 
+    else:
+        print("dicteding...")
+
+    y += 1
+
+print("code end") #first time i dicted to stop loop 
+
+t = 1
+while t <= 10:
+    if(t%2 != 0):
+        t += 1
+        continue #skip
+    print(t)
+    t += 1 # even number print
+print("code end")
+
+"odd number selistion"
+
+x = 1
+while x <= 20:
+    if(x%2 == 0):
+        x +=1
+        continue
+    print(x)
+    x += 1
+print("code end") #odd number print
