@@ -1,0 +1,56 @@
+#...function difine
+
+"function call"
+
+def sum(a, b):
+    i = a + b
+    return i
+
+print(sum(15,20)) # 35
+print(sum(14, 12)) # 26
+
+def mult(y,x):
+    r = y * x
+    return r
+
+print(mult(4, 4)) # 16
+print(type(mult)) # <class function>
+
+'Assigning a default value to parameter, which is used when no argument is passed.'
+
+def id(name="alex"):
+    print(name)
+
+id() # alex
+id("rocky") # rocky
+
+'Write a Function to print the length of a list. ( list is the parameter)'
+
+def fun_per(list):
+    print(len(list))
+fun_per(["appel", "mango", "lici", "banna"]) # 4
+
+'Write a Fnction to print the elements of a list in a single line. ( list is the parameter)'
+
+def the_permt(my_list):
+    print(*my_list) # * remove the second bracket
+
+the_permt([10,12,15,17,18]) # 10 12 15 17 18 
+
+'WAF to find the factorial of n. (n is the parameter)'
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1 
+    return n * factorial(n-1)
+
+print(factorial(4)) # 2*1 = 2, 3*2 = 6, 4*6 = 24 
+
+'waf to convert USD to taka'
+
+def convart(USD):
+    tk = USD*122.19
+    print(USD, "usd =", tk, "bdt")
+
+convart(5) # 5 usd = 610.95 btt
+convart(6) # 6 usd = 733.14 bdt
