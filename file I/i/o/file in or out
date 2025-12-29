@@ -1,1 +1,45 @@
+#..File I/O in pythone
+'Open,Read,append & Close File.'
 
+#..we have to open a file befor reading or writing
+
+'exmpl:- x = open("file_name", "mode")'
+
+x = open("code.txt", "r") # 'r' open for reading
+
+code = x.read()
+print(code) # opened file document
+
+'r+ operator'
+
+x = open("code.txt", "r+") # 'a' when append code
+
+x.write("bangladesh") # delete the previous element and write 'bangladesh'
+
+code = x.read(10)
+print(code) # 10 aytem printed
+
+x.close
+
+# 'opened line by line'
+
+x = open("code.txt", "r")
+
+line1 = x.readline()
+print(line1) # print first line
+
+line2 = x.readline()
+print(line2) # print sesond line 
+
+'write a file materilas'
+
+x = open("code.txt", "w")
+x.write("this is a new line") # new element added code
+
+x.write("\nthis is second line.") # second line added code 
+
+'append code line..'
+
+x = open("code.txt", "a") # 'a' when append code
+
+x.write("bangaoly") # lest line printed elemelt 'bangaoly'
