@@ -1,0 +1,6 @@
+#..deleting a file
+
+'os mathode..'
+
+import os
+os.remove("code.txt") # deleting file
