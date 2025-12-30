@@ -1,0 +1,28 @@
+'..with Syntax'
+#..read, write, append
+
+'read element..'
+'statment:- with open("file_name","mode")'
+
+with open("practice.txt", "r") as i:
+    data = i.read()
+    print(data) # file element priented
+
+'write element..'
+
+with open("practice.txt", "w") as i:
+    code = i.write("iam a programer.\ni practice pythone programing")
+    code = i.write("\ni learn coding")
+    print(code) # file element writed
+
+'first line add element'
+
+with open("practice.txt", "r+") as i:
+    elm = i.write("bangladesh")
+    print(elm) # deleted a prevus element first line print bangladesh
+
+'append element..'
+
+with open("practice.txt", "a") as i:
+    lin = i.write("mango")
+    print(lin) # lest line priented 'mango'
