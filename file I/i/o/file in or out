@@ -12,7 +12,7 @@ print(code) # opened file document
 
 'r+ operator'
 
-x = open("code.txt", "r+") # 'a' when append code
+x = open("code.txt", "r+") 
 
 x.write("bangladesh") # delete the previous element and write 'bangladesh'
 
